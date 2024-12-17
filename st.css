@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-main {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+}
+h1:hover {
+    color: aqua;
+}
+h1 {
+    transition: 0.4s ease;
+}
+.black,
+.white {
+    flex-direction: row;
+    display: flex;
+}
+
+.row {
+    display: flex;
+}
+.cell,.cell-1,.cell-2,.cell-3,.cell-4{
+    border: 4px solid #000;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    transition: 0.4s ease;
+    cursor: pointer;
+    font-size: 36px;
+}
+.black:nth-child(odd) .cell-1:nth-child(even),
+.black:nth-child(even) .cell-2:nth-child(odd) {
+background-color: #000; 
+}
+.cell-1:nth-child(even),.cell-2:nth-child(odd){
+    color: #fff;
+}
+.white:nth-child(odd) .cell-3:nth-child(even),
+.white:nth-child(even) .cell-4:nth-child(odd) {
+background-color: #000; 
+}
+.cell-3:nth-child(even),.cell-4:nth-child(odd){
+    color: #fff;
+}
+.row:nth-child(odd) .cell:nth-child(even),
+.row:nth-child(even) .cell:nth-child(odd) {
+background-color: #000; 
+}
+.cell-1:hover {
+    font-size: 60px; 
+    color: #a52a2a;
+    }
+.cell-2:hover{
+    font-size: 60px; 
+    color: #a52a2a; 
+}
+.cell-3:hover{
+    font-size: 60px; 
+    color: #a52a2a; 
+}
+.cell-4:hover{
+    font-size: 60px; 
+    color: #a52a2a; 
+}
+
+
